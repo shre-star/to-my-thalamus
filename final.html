@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>One Last Thing ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+
+background:linear-gradient(180deg,#050505,#220000);
+
+overflow:hidden;
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+color:white;
+
+text-align:center;
+
+}
+
+.container{
+
+animation:fadeIn 3s;
+
+padding:30px;
+
+}
+
+img{
+
+width:260px;
+
+border-radius:25px;
+
+box-shadow:0 0 30px hotpink;
+
+margin-bottom:25px;
+
+animation:zoom 3s;
+
+}
+
+h1{
+
+font-size:55px;
+
+margin-bottom:20px;
+
+color:#ff6b81;
+
+}
+
+p{
+
+font-size:24px;
+
+line-height:1.8;
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+button{
+
+margin-top:40px;
+
+padding:18px 40px;
+
+font-size:22px;
+
+background:#ff4d6d;
+
+color:white;
+
+border:none;
+
+border-radius:20px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+background:#ff2d55;
+
+}
+
+.heart{
+
+position:fixed;
+
+bottom:-50px;
+
+font-size:24px;
+
+animation:float 7s linear infinite;
+
+pointer-events:none;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+opacity:0;
+
+}
+
+100%{
+
+transform:translateY(-120vh);
+
+opacity:1;
+
+}
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+@keyframes zoom{
+
+from{
+
+transform:scale(.7);
+
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="photo7.jpg">
+
+<h1>One Last Thing... ❤️</h1>
+
+<p>
+
+My Thalamus,
+
+<br><br>
+
+I know MBBS isn't easy.
+
+There will be sleepless nights,
+stress,
+and days when you wonder if you're enough.
+
+But I hope whenever that happens,
+you'll remember this...
+
+<br><br>
+
+✨ I'm already proud of the doctor you're becoming.
+
+<br><br>
+
+No exam,
+no mark,
+and no difficult day
+could ever change that.
+
+<br><br>
+
+Thank you for choosing me.
+
+I'd choose you in every lifetime.
+
+<br><br>
+
+I love you endlessly.
+
+❤️
+
+</p>
+
+<button onclick="finish()">
+
+Forever Yours ❤️
+
+</button>
+
+</div>
+
+<script>
+
+for(let i=0;i<40;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"%";
+
+heart.style.fontSize=(15+Math.random()*25)+"px";
+
+heart.style.animationDuration=(4+Math.random()*5)+"s";
+
+document.body.appendChild(heart);
+
+}
+
+function finish(){
+
+alert("Thank you for opening my little surprise ❤️\n\nNow go ace your MBBS exams. I'll always be cheering for you. 🩺");
+
+}
+
+</script>
+
+</body>
+
+</html>
