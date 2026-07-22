@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>To My Thalamus ❤️</title>
+
+<style>
+body{
+background:#111;
+color:white;
+font-family:Arial,sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+text-align:center;
+}
+
+.box{
+background:#222;
+padding:40px;
+border-radius:20px;
+width:320px;
+}
+
+input{
+width:80%;
+padding:12px;
+font-size:20px;
+text-align:center;
+border-radius:10px;
+border:none;
+margin-top:15px;
+}
+
+button{
+margin-top:20px;
+padding:12px 30px;
+font-size:18px;
+border:none;
+border-radius:10px;
+background:#ff4d6d;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff2d55;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h1>❤️ To My Thalamus ❤️</h1>
+
+<p>Enter Passcode</p>
+
+<input type="password" id="password" placeholder="0317">
+
+<br>
+
+<button onclick="checkPassword()">Open</button>
+
+<p id="message"></p>
+
+</div>
+
+<script>
+function checkPassword(){
+
+var password=document.getElementById("password").value;
+
+if(password=="0317"){
+window.location.href="surprise.html";
+}
+else{
+document.getElementById("message").innerHTML="❌ Wrong passcode";
+}
+
+}
+</script>
+
+</body>
+</html>
