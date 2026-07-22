@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Forever ❤️</title>
+
+<style>
+
+body{
+
+margin:0;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+height:100vh;
+
+background:black;
+
+color:white;
+
+font-family:Georgia,serif;
+
+text-align:center;
+
+overflow:hidden;
+
+}
+
+.container{
+
+animation:fade 3s;
+
+padding:30px;
+
+max-width:700px;
+
+}
+
+h1{
+
+font-size:55px;
+
+color:#ff4d6d;
+
+}
+
+p{
+
+font-size:24px;
+
+line-height:1.8;
+
+}
+
+img{
+
+margin-top:30px;
+
+width:280px;
+
+border-radius:25px;
+
+box-shadow:0 0 30px hotpink;
+
+}
+
+.heart{
+
+position:fixed;
+
+bottom:-40px;
+
+font-size:24px;
+
+animation:float 7s linear infinite;
+
+}
+
+@keyframes float{
+
+0%{transform:translateY(0);opacity:0;}
+
+100%{transform:translateY(-120vh);opacity:1;}
+
+}
+
+@keyframes fade{
+
+from{opacity:0;}
+
+to{opacity:1;}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>❤️ Thank You ❤️</h1>
+
+<p>
+
+Thank you for opening my little surprise.
+
+<br><br>
+
+I know your journey through MBBS isn't easy.
+
+There will be long nights, difficult exams, and moments when you question yourself.
+
+Whenever that happens...
+
+come back here.
+
+Remember that someone believes in you with all her heart.
+
+I'm already proud of the doctor you're becoming.
+
+Not because of your marks.
+
+Not because of your degree.
+
+But because of the kind, hardworking person you are.
+
+<br><br>
+
+I love you endlessly.
+
+<br><br>
+
+Forever,
+
+<b>Shreya ❤️</b>
+
+</p>
+
+<img src="photo7.jpg">
+
+</div>
+
+<script>
+
+for(let i=0;i<40;i++){
+
+let h=document.createElement("div");
+
+h.className="heart";
+
+h.innerHTML="❤️";
+
+h.style.left=Math.random()*100+"%";
+
+h.style.animationDuration=(4+Math.random()*4)+"s";
+
+document.body.appendChild(h);
+
+}
+
+</script>
+
+</body>
+
+</html>
